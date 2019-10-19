@@ -1,6 +1,6 @@
 ---
 layout: default
-titel: Leerkracht website
+titel: wilbert
 ---
 
 Hallo ik ben **wilbert** 
