@@ -70,6 +70,17 @@ sense.show_message(str(round(humidity,0))[:-2],
 
 sense.set_pixels(vocht_pic1)
 
+eind_pic = [
+w,	b,	b,	w,	b,	b,	w,	b,
+w,	b,	b,	w,	b,	w,	b,	w,
+w,	w,	w,	w,	b,	w,	w,	w,
+w,	b,	b,	w,	b,	w,	b,	w,
+w,	b,	b,	w,	b,	b,	b,	b,
+b,	b,	w,	b,	b,	b,	w,	b,
+b,	b,	w,	b,	w,	b,	w,	b,
+b,	b,	b,	w,	b,	w,	b,	b,
+]
 
+sense.set_pixels(eind_pic)
 
 
