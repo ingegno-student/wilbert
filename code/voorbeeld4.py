@@ -27,19 +27,29 @@ humidity = sense.get_humidity()
 w = (255, 255, 255)
 b = (0, 0, 0)
 
-picture = [
-    b, b, w, w, w, w, b, b,
-    b, w, w, w, w, w, w, b,
-    b, w, w, w, w, w, w, b,
-    b, b, w, w, w, w, b, b,
-    b, w, b, w, b, w, b, b,
-    b, w, b, w, b, w, b, b,
-    w, b, w, b, w, b, b, b,
-    w, b, w, b, w, b, b, b
+vocht_pic1 = [
+b,	b,	b,	w,	w,	w,	w,	b,
+b,	b,	w,	w,	w,	w,	w,	w,
+b,	b,	w,	w,	w,	w,	w,	w,
+b,	b,	b,	w,	w,	w,	w,	b,
+b,	b,	w,	b,	w,	b,	w,	b,
+b,	w, 	b,	w,	b,	w,	b,	b,
+b,	b,	b,	b,	b,	b,	b,	b,
+b,	b,	b,	b,	b,	b,	b,	b,
+]
+vocht_pic2 = [
+b,	b,	b,	w,	w,	w,	w,	b,
+b,	b,	w,	w,	w,	w,	w,	w,
+b,	b,	w,	w,	w,	w,	w,	w,
+b,	b,	b,	w,	w,	w,	w,	b,
+b,	b,	b,	b,	b,	b,	b,	b,
+b,	w,	b,	w,	b,	w,	b,	b,
+w,	b,	w,	b,	w,	b,	b,	b,
+b,	b,	b,	b,	b,	b,	b,	b,
 ]
 
 #sense.set_rotation(0)
-sense.set_pixels(picture)
+sense.set_pixels(vocht_pic1)
 time.sleep(2)
 
 sense.show_message("Temp: ", text_colour=(255, 0, 0), back_colour=(0,0,0), scroll_speed=0.1)
@@ -58,7 +68,7 @@ sense.show_message(str(round(humidity,0))[:-2],
                   back_colour=(0,0,0), 
                   scroll_speed=0.1)
 
-sense.set_pixels(picture)
+sense.set_pixels(vocht_pic1)
 
 
 
